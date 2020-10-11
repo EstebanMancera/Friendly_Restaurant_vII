@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btneditarusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDITAR"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btneliminarusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnmostrarusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MOSTRAR"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnsalirusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SALIR"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text=" BIENVENIDO" />
+
+    <TextView
+        android:id="@+id/txtnomusu"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text=" Hola! Usuario" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btncomidas"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:backgroundTint="?android:attr/colorFocusedHighlight"
+            android:text="MENU"
+            android:hint="@string/ingresar"
+            android:drawableLeft="@drawable/comida"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="533dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"/>
+
+        <Button
+            android:id="@+id/btnproductos"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/mas_comidas"
+            android:backgroundTint="@android:color/holo_orange_light"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="533dp"
+            android:text="NUEVO PLATO"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
